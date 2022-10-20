@@ -34,7 +34,8 @@ form.addEventListener('submit', (e) => {
     if (form.email.value && form.message.value) {
         form.email.value = "";
         form.message.value = "";
-        console.log(JSON.parse(localStorage.getItem(KEY)));   
+        console.log(JSON.parse(localStorage.getItem(KEY))); 
+        localStorage.clear();
     }
  
 });
