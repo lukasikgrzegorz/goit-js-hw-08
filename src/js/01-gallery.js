@@ -26,6 +26,8 @@ for (let item of galleryItems) {
     gallery.append(newItem); 
 }
 
+//NPM Lightbox
+
 var lightbox = new SimpleLightbox('.gallery a', {
   captionsData: 'alt',
   captionDelay: 250,
