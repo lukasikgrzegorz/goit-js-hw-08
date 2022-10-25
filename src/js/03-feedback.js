@@ -32,6 +32,7 @@ form.addEventListener('submit', (e) => {
         form.message.value = "";
         console.log(JSON.parse(localStorage.getItem(KEY))); 
         localStorage.clear();
+        data = {};
     }
  
 });
