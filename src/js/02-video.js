@@ -5,14 +5,12 @@ const KEY = 'videoplayer-current-time';
 
 const player = new Vimeo('vimeo-player');
 
-//Chcek local storage
 
 player.on('loaded', () => {
   const currentTime = localStorage.getItem(KEY) || 0;
   player.setCurrentTime(currentTime);
 });
 
-//Save actual time
 
 player.on(
   'timeupdate',
