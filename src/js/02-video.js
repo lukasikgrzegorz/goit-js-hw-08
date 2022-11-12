@@ -6,7 +6,7 @@ const KEY = 'videoplayer-current-time';
 const iframe = document.querySelector('iframe');
 console.log(iframe);
 
-const player = new Vimeo('vimeo-player');
+const player = new Vimeo(iframe);
 
 
 player.on('loaded', () => {
